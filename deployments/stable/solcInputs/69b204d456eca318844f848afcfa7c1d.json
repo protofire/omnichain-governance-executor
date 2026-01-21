@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/mocks/MockUniswapV3Factory.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n\ncontract MockUniswapV3Factory {\n    address public owner;\n\n    mapping(uint24 => int24) public feeAmountTickSpacing;\n    mapping(address => mapping(address => mapping(uint24 => address)))\n        public getPool;\n\n    constructor() {\n        owner = msg.sender;\n\n        feeAmountTickSpacing[500] = 10;\n        feeAmountTickSpacing[3000] = 60;\n        feeAmountTickSpacing[10000] = 200;\n    }\n\n    function setOwner(address _owner) external {\n        require(msg.sender == owner);\n        owner = _owner;\n    }\n\n    function enableFeeAmount(uint24 fee, int24 tickSpacing) public {\n        require(msg.sender == owner);\n        require(fee < 1000000);\n        require(tickSpacing > 0 && tickSpacing < 16384);\n        require(feeAmountTickSpacing[fee] == 0);\n\n        feeAmountTickSpacing[fee] = tickSpacing;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 1
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "address": "0x5cd1fCF317cA1594b3086FDA6D2B9870A143a39f",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint24",
+          "name": "fee",
+          "type": "uint24"
+        },
+        {
+          "internalType": "int24",
+          "name": "tickSpacing",
+          "type": "int24"
+        }
+      ],
+      "name": "enableFeeAmount",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint24",
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "name": "feeAmountTickSpacing",
+      "outputs": [
+        {
+          "internalType": "int24",
+          "name": "",
+          "type": "int24"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint24",
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "name": "getPool",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "setOwner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x0bdac049c8b654758888965512bed4cc03f9ff4ae7de6479b3cd255fffec4f8d",
+  "receipt": {
+    "to": null,
+    "from": "0x644441829Cf835B5C59bfddBFB2B11Aa1f2Ee198",
+    "contractAddress": "0x5cd1fCF317cA1594b3086FDA6D2B9870A143a39f",
+    "transactionIndex": 0,
+    "gasUsed": "314022",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x736d27bbc4e276a34f18df4fa346aef551fbc95c9e91617a777631c03dc94467",
+    "transactionHash": "0x0bdac049c8b654758888965512bed4cc03f9ff4ae7de6479b3cd255fffec4f8d",
+    "logs": [],
+    "blockNumber": 10305734,
+    "cumulativeGasUsed": "314022",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "69b204d456eca318844f848afcfa7c1d",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"uint24\",\"name\":\"fee\",\"type\":\"uint24\"},{\"internalType\":\"int24\",\"name\":\"tickSpacing\",\"type\":\"int24\"}],\"name\":\"enableFeeAmount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint24\",\"name\":\"\",\"type\":\"uint24\"}],\"name\":\"feeAmountTickSpacing\",\"outputs\":[{\"internalType\":\"int24\",\"name\":\"\",\"type\":\"int24\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint24\",\"name\":\"\",\"type\":\"uint24\"}],\"name\":\"getPool\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"name\":\"setOwner\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/MockUniswapV3Factory.sol\":\"MockUniswapV3Factory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"contracts/mocks/MockUniswapV3Factory.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\n\\ncontract MockUniswapV3Factory {\\n    address public owner;\\n\\n    mapping(uint24 => int24) public feeAmountTickSpacing;\\n    mapping(address => mapping(address => mapping(uint24 => address)))\\n        public getPool;\\n\\n    constructor() {\\n        owner = msg.sender;\\n\\n        feeAmountTickSpacing[500] = 10;\\n        feeAmountTickSpacing[3000] = 60;\\n        feeAmountTickSpacing[10000] = 200;\\n    }\\n\\n    function setOwner(address _owner) external {\\n        require(msg.sender == owner);\\n        owner = _owner;\\n    }\\n\\n    function enableFeeAmount(uint24 fee, int24 tickSpacing) public {\\n        require(msg.sender == owner);\\n        require(fee < 1000000);\\n        require(tickSpacing > 0 && tickSpacing < 16384);\\n        require(feeAmountTickSpacing[fee] == 0);\\n\\n        feeAmountTickSpacing[fee] = tickSpacing;\\n    }\\n}\\n\",\"keccak256\":\"0x80a3be19a888b63b7f261f08d92d01e68e16f4e6c6d0deb9956508f3789538ce\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600080546001600160a01b0319163317815560016020527f344a86d038cc67650617710ee5afca4f5d1ed60d199ecd86852cac7a55b2d3e5805462ffffff19908116600a179091557f8bf1273959200f3b11670b7338c174c40286607d4b851c000be7fc007987b27580548216603c1790556127109091527f1ca239af1d44623dfaa87ee0cbbbe4bbeb2112df36e66deedafd694350d045cd805490911660c8179055610312806100c36000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806313af40351461005c5780631698ee821461007157806322afcccb146100c85780638a7c195f146100fe5780638da5cb5b14610111575b600080fd5b61006f61006a36600461020c565b610124565b005b6100ab61007f366004610241565b60026020908152600093845260408085208252928452828420905282529020546001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100eb6100d6366004610284565b60016020526000908152604090205460020b81565b60405160029190910b81526020016100bf565b61006f61010c36600461029f565b61015d565b6000546100ab906001600160a01b031681565b6000546001600160a01b0316331461013b57600080fd5b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000546001600160a01b0316331461017457600080fd5b620f42408262ffffff161061018857600080fd5b60008160020b13801561019f57506140008160020b125b6101a857600080fd5b62ffffff821660009081526001602052604090205460020b156101ca57600080fd5b62ffffff9182166000908152600160205260409020805462ffffff191691909216179055565b80356001600160a01b038116811461020757600080fd5b919050565b60006020828403121561021e57600080fd5b610227826101f0565b9392505050565b803562ffffff8116811461020757600080fd5b60008060006060848603121561025657600080fd5b61025f846101f0565b925061026d602085016101f0565b915061027b6040850161022e565b90509250925092565b60006020828403121561029657600080fd5b6102278261022e565b600080604083850312156102b257600080fd5b6102bb8361022e565b915060208301358060020b81146102d157600080fd5b80915050925092905056fea2646970667358221220150ed8032a09844e4905864e2970b05f1fd085260c4d7953f8e6dd4b8da7622564736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806313af40351461005c5780631698ee821461007157806322afcccb146100c85780638a7c195f146100fe5780638da5cb5b14610111575b600080fd5b61006f61006a36600461020c565b610124565b005b6100ab61007f366004610241565b60026020908152600093845260408085208252928452828420905282529020546001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100eb6100d6366004610284565b60016020526000908152604090205460020b81565b60405160029190910b81526020016100bf565b61006f61010c36600461029f565b61015d565b6000546100ab906001600160a01b031681565b6000546001600160a01b0316331461013b57600080fd5b600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000546001600160a01b0316331461017457600080fd5b620f42408262ffffff161061018857600080fd5b60008160020b13801561019f57506140008160020b125b6101a857600080fd5b62ffffff821660009081526001602052604090205460020b156101ca57600080fd5b62ffffff9182166000908152600160205260409020805462ffffff191691909216179055565b80356001600160a01b038116811461020757600080fd5b919050565b60006020828403121561021e57600080fd5b610227826101f0565b9392505050565b803562ffffff8116811461020757600080fd5b60008060006060848603121561025657600080fd5b61025f846101f0565b925061026d602085016101f0565b915061027b6040850161022e565b90509250925092565b60006020828403121561029657600080fd5b6102278261022e565b600080604083850312156102b257600080fd5b6102bb8361022e565b915060208301358060020b81146102d157600080fd5b80915050925092905056fea2646970667358221220150ed8032a09844e4905864e2970b05f1fd085260c4d7953f8e6dd4b8da7622564736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/mocks/MockUniswapV3Factory.sol:MockUniswapV3Factory",
+        "label": "owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 7,
+        "contract": "contracts/mocks/MockUniswapV3Factory.sol:MockUniswapV3Factory",
+        "label": "feeAmountTickSpacing",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_uint24,t_int24)"
+      },
+      {
+        "astId": 15,
+        "contract": "contracts/mocks/MockUniswapV3Factory.sol:MockUniswapV3Factory",
+        "label": "getPool",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint24,t_address)))"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_int24": {
+        "encoding": "inplace",
+        "label": "int24",
+        "numberOfBytes": "3"
+      },
+      "t_mapping(t_address,t_mapping(t_address,t_mapping(t_uint24,t_address)))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(address => mapping(uint24 => address)))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_address,t_mapping(t_uint24,t_address))"
+      },
+      "t_mapping(t_address,t_mapping(t_uint24,t_address))": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => mapping(uint24 => address))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_uint24,t_address)"
+      },
+      "t_mapping(t_uint24,t_address)": {
+        "encoding": "mapping",
+        "key": "t_uint24",
+        "label": "mapping(uint24 => address)",
+        "numberOfBytes": "32",
+        "value": "t_address"
+      },
+      "t_mapping(t_uint24,t_int24)": {
+        "encoding": "mapping",
+        "key": "t_uint24",
+        "label": "mapping(uint24 => int24)",
+        "numberOfBytes": "32",
+        "value": "t_int24"
+      },
+      "t_uint24": {
+        "encoding": "inplace",
+        "label": "uint24",
+        "numberOfBytes": "3"
+      }
+    }
+  }
+}

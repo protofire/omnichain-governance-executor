@@ -53,7 +53,7 @@ module.exports = {
 
     networks: {
         ethereum: {
-            url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+            url: "https://eth1.lava.build",
             chainId: 1,
             accounts: accounts(),
         },
@@ -68,7 +68,7 @@ module.exports = {
             accounts: accounts(),
         },
         polygon: {
-            url: "https://rpc-mainnet.maticvigil.com",
+            url: "https://polygon.lava.build",
             chainId: 137,
             accounts: accounts(),
         },
