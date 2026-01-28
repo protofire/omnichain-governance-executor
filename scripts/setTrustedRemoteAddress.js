@@ -3,13 +3,13 @@ const { ethers } = require("hardhat")
 
 async function main() {
     try {
-        const contractAddress = "0x917791cF935260b3BfF6840a84C764C8d8A6352b" // Stable
-        // const remoteChainId = 396 // Stable
-        // const remoteAddress = "0x917791cF935260b3BfF6840a84C764C8d8A6352b" // Stable
+        // const contractAddress = "0x505556e173fCDFC0f40e489F341d544C90ac6e6D" // Stable
+        const remoteChainId = 396 // Stable
+        const remoteAddress = "0x505556e173fCDFC0f40e489F341d544C90ac6e6D" // Stable
 
-        // const contractAddress = "0x79478Fb7967878e6F65A59a33E7BAB33EF11423E" // ETH
-        const remoteChainId = 101 // ETH
-        const remoteAddress = "0x79478Fb7967878e6F65A59a33E7BAB33EF11423E" // ETH
+        const contractAddress = "0x079fbb55a84f68601A15684e6677Ac078C127e75" // ETH
+        // const remoteChainId = 101 // ETH
+        // const remoteAddress = "0x079fbb55a84f68601A15684e6677Ac078C127e75" // ETH
 
         const contractName = "OmnichainGovernanceExecutor"
         // const contractName = "OmnichainProposalSender"

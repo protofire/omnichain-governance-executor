@@ -3,9 +3,9 @@ const { ethers } = require("hardhat")
 
 async function main() {
     try {
-        const contractAddress = ""
+        const contractAddress = "0x079fbb55a84f68601A15684e6677Ac078C127e75"
         const contractName = "OmnichainProposalSender"
-        const newOwner = ""
+        const newOwner = "0x1a9C8182C09F50C8318d769245beA52c32BE35BC" // Uniswap Timelock V2
 
         const [signer] = await ethers.getSigners()
 
