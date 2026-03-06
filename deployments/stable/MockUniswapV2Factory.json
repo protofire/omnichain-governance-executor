@@ -1,0 +1,121 @@
+{
+  "address": "0xD77B60EDf9E409e403447Bd6C3ce75BaF99A2176",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "feeTo",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "feeToSetter",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_feeTo",
+          "type": "address"
+        }
+      ],
+      "name": "setFeeTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_feeToSetter",
+          "type": "address"
+        }
+      ],
+      "name": "setFeeToSetter",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0xa82c613835adc93ffbba73f3d7ab80c64eef8d3190239bffa289c36b83e49a10",
+  "receipt": {
+    "to": null,
+    "from": "0x644441829Cf835B5C59bfddBFB2B11Aa1f2Ee198",
+    "contractAddress": "0xD77B60EDf9E409e403447Bd6C3ce75BaF99A2176",
+    "transactionIndex": 0,
+    "gasUsed": "182870",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xc18d324ce8f32b8b23d3b5c50f01c38f4ced21a498e44b2ba0dea9d2ef25657d",
+    "transactionHash": "0xa82c613835adc93ffbba73f3d7ab80c64eef8d3190239bffa289c36b83e49a10",
+    "logs": [],
+    "blockNumber": 15613582,
+    "cumulativeGasUsed": "182870",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "6072d6cce5573ebe694c08e94eb0986d",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"feeTo\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"feeToSetter\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_feeTo\",\"type\":\"address\"}],\"name\":\"setFeeTo\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_feeToSetter\",\"type\":\"address\"}],\"name\":\"setFeeToSetter\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/MockUniswapV2Factory.sol\":\"MockUniswapV2Factory\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1},\"remappings\":[]},\"sources\":{\"contracts/mocks/MockUniswapV2Factory.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.17;\\n\\ncontract MockUniswapV2Factory {\\n    address public feeTo;\\n    address public feeToSetter;\\n\\n    constructor() {\\n        feeToSetter = msg.sender;\\n    }\\n\\n    function setFeeTo(address _feeTo) external {\\n        require(msg.sender == feeToSetter, \\\"UniswapV2: FORBIDDEN\\\");\\n        feeTo = _feeTo;\\n    }\\n\\n    function setFeeToSetter(address _feeToSetter) external {\\n        require(msg.sender == feeToSetter, \\\"UniswapV2: FORBIDDEN\\\");\\n        feeToSetter = _feeToSetter;\\n    }\\n}\\n\",\"keccak256\":\"0xb4828fd74e59a4c92302363779739e3bc5afacb4be638daee9d1b2234e3a8b8d\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50600180546001600160a01b031916331790556101f0806100326000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063017e7e5814610051578063094b741514610080578063a2e74af614610093578063f46901ed146100a8575b600080fd5b600054610064906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600154610064906001600160a01b031681565b6100a66100a136600461015c565b6100bb565b005b6100a66100b636600461015c565b610110565b6001546001600160a01b031633146100ee5760405162461bcd60e51b81526004016100e59061018c565b60405180910390fd5b600180546001600160a01b0319166001600160a01b0392909216919091179055565b6001546001600160a01b0316331461013a5760405162461bcd60e51b81526004016100e59061018c565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b60006020828403121561016e57600080fd5b81356001600160a01b038116811461018557600080fd5b9392505050565b6020808252601490820152732ab734b9bbb0b82b191d102327a92124a22222a760611b60408201526060019056fea2646970667358221220b84c95c6a7ac3df8ca44190bd6a333b84fca24dccec8a55bc87df7e84405c52d64736f6c63430008110033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c8063017e7e5814610051578063094b741514610080578063a2e74af614610093578063f46901ed146100a8575b600080fd5b600054610064906001600160a01b031681565b6040516001600160a01b03909116815260200160405180910390f35b600154610064906001600160a01b031681565b6100a66100a136600461015c565b6100bb565b005b6100a66100b636600461015c565b610110565b6001546001600160a01b031633146100ee5760405162461bcd60e51b81526004016100e59061018c565b60405180910390fd5b600180546001600160a01b0319166001600160a01b0392909216919091179055565b6001546001600160a01b0316331461013a5760405162461bcd60e51b81526004016100e59061018c565b600080546001600160a01b0319166001600160a01b0392909216919091179055565b60006020828403121561016e57600080fd5b81356001600160a01b038116811461018557600080fd5b9392505050565b6020808252601490820152732ab734b9bbb0b82b191d102327a92124a22222a760611b60408201526060019056fea2646970667358221220b84c95c6a7ac3df8ca44190bd6a333b84fca24dccec8a55bc87df7e84405c52d64736f6c63430008110033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3,
+        "contract": "contracts/mocks/MockUniswapV2Factory.sol:MockUniswapV2Factory",
+        "label": "feeTo",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 5,
+        "contract": "contracts/mocks/MockUniswapV2Factory.sol:MockUniswapV2Factory",
+        "label": "feeToSetter",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      }
+    }
+  }
+}

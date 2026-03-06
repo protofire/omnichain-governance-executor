@@ -1,0 +1,35 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/mocks/MockUniswapV2Factory.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.17;\n\ncontract MockUniswapV2Factory {\n    address public feeTo;\n    address public feeToSetter;\n\n    constructor() {\n        feeToSetter = msg.sender;\n    }\n\n    function setFeeTo(address _feeTo) external {\n        require(msg.sender == feeToSetter, \"UniswapV2: FORBIDDEN\");\n        feeTo = _feeTo;\n    }\n\n    function setFeeToSetter(address _feeToSetter) external {\n        require(msg.sender == feeToSetter, \"UniswapV2: FORBIDDEN\");\n        feeToSetter = _feeToSetter;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 1
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
